@@ -23,19 +23,15 @@ StarAdmin Free Angular Admin Template/
 ├── dist/
 ├── e2e/
 ├── src/
-├── .angular-cli.json
 ├── .editorconfig
 ├── .gitignore
-├── karma.conf.js
+├── angular.json
 ├── package-lock.json
 ├── package.json
-├── protractor.conf.js
 ├── README.md
 ├── screenshot.jpg
 ├── tsconfig.json
 ├── tslint.json
-├── webpack.config.js
-├── .editorconfig
 ```
 
 ### Usage
@@ -51,10 +47,10 @@ $ cd StarAdmin-Free-Angular-Admin-Template
 npm install
 
 # serve with hot reload at localhost:4200
-npm start
+ng serve
 
 # build for production with minification
-npm run build
+ng build
 ```
 
 ### Go Premium!!

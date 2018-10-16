@@ -1,0 +1,88 @@
+/* Accordions */
+
+.accordion {
+  .card {
+    margin-bottom: 10px;
+    border: 1px solid $border-color;
+    .card-header {
+      background-color: transparent;
+      border: none;
+      padding:0;
+      font-size: 14px;
+      a {
+        display: block;
+        padding:.75rem 1.70rem .75rem 1.25rem;
+        color: theme-color(dark);
+        text-decoration: none;
+        font-size: inherit;
+        position: relative;
+        @include transition-duration(0.5s);
+        transition-property: border-color;
+        -webkit-transition-property: border-color;
+        &:before {
+          font-family:"Material Design Icons";
+          position: absolute;
+          right: 7px;
+          top: 10px;
+          font-size: 20px;
+          display: block;
+          color: $black;
+        }
+        &[aria-expanded="true"] {
+          &:before {
+            content: "\F140";
+          }
+        }
+        &[aria-expanded="false"] {
+          &:before{
+            content: "\F143";
+          }
+        }
+      }
+      &.bg-success,
+      &.bg-warning,
+      &.bg-danger,
+      &.bg-primary,
+      &.bg-dark {
+        a {
+          color: $white;
+          &:before {
+            color: $white;
+          }
+        }
+      }
+    }
+    .card-body {
+      font-size: 0.88rem;
+      padding:12px 20px 26px 20px;
+      i {
+        font-size: 1.25rem;
+      }
+    }
+    &.bg-success,
+    &.bg-danger,
+    &.bg-primary,
+    &.bg-info,
+    &.bg-warning,
+    &.bg-dark {
+      color: $white;
+      .card-header {
+        color: $white;
+        border:none;
+        &:before {
+          color: $white;
+        }
+        a {
+          color: $white;
+        }
+      }
+    }
+  }
+}
+
+/* inverse buttons */
+@each $color, $value in $theme-colors {
+  .accordion-inverse-#{$color} {
+    @include accordion-inverse-variant($value);
+  }
+}
