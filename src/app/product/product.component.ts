@@ -19,10 +19,10 @@ const states = ['Alabama', 'Alaska', 'American Samoa', 'Arizona', 'Arkansas', 'C
 
 @Component({
   selector: 'app-forms',
-  templateUrl: './forms.component.html',
-  styleUrls: ['./forms.component.scss']
+  templateUrl: './product.component.html',
+  styleUrls: ['./product.component.scss']
 })
-export class FormsComponent implements OnInit {
+export class productComponent implements OnInit {
   currentRate: any;
   public typeaheadBasicModel: any;
   public typeaheadFocusModel: any;
