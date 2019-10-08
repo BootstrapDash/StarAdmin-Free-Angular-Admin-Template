@@ -20,7 +20,7 @@
     "@angular/platform-browser": "~8.2.9",
     "@angular/platform-browser-dynamic": "~8.2.9",
     "@angular/router": "~8.2.9",
-    "@ng-bootstrap/ng-bootstrap": "^4.2.1",
+    "@ng-bootstrap/ng-bootstrap": "^4.2.2",
     "bootstrap": "^4.3.1",
     "compass-mixins": "^0.12.10",
     "core-js": "^2.5.4",

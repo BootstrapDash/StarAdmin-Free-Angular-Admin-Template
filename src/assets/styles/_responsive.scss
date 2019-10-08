@@ -20,14 +20,14 @@
     &.row-offcanvas-right {
       right: 0;
 
-      /deep/ .sidebar-offcanvas {
+      >>> .sidebar-offcanvas {
         right: -100%; // 12 columns
       }
 
       &.active {
         right: calc(50% + 30px); // 6 columns
 
-        /deep/ .sidebar-offcanvas {
+        >>> .sidebar-offcanvas {
           right: calc(-50% - 15px); // 6 columns
         }
       }
@@ -36,20 +36,20 @@
     &.row-offcanvas-left {
       left: 0;
 
-      /deep/ .sidebar-offcanvas {
+      >>> .sidebar-offcanvas {
         left: -100%; // 12 columns
       }
 
       &.active {
         left: 50%; // 6 columns
 
-        /deep/ .sidebar-offcanvas {
+        >>> .sidebar-offcanvas {
           left: -50%; // 6 columns
         }
       }
     }
 
-    /deep/ .sidebar-offcanvas {
+    >>> .sidebar-offcanvas {
       position: absolute;
       top: 0;
       width: calc( 50% + 30px); // 6 columns
