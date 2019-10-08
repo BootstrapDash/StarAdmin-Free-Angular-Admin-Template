@@ -12,14 +12,14 @@
   "private": true,
   "dependencies": {
     "@angular-devkit/build-angular": "^0.803.8",
-    "@angular/animations": "~7.2.0",
-    "@angular/common": "~7.2.0",
-    "@angular/compiler": "~7.2.0",
-    "@angular/core": "^7.2.15",
-    "@angular/forms": "~7.2.0",
-    "@angular/platform-browser": "~7.2.0",
-    "@angular/platform-browser-dynamic": "~7.2.0",
-    "@angular/router": "~7.2.0",
+    "@angular/animations": "~8.2.9",
+    "@angular/common": "~8.2.9",
+    "@angular/compiler": "~8.2.9",
+    "@angular/core": "^8.2.9",
+    "@angular/forms": "~8.2.9",
+    "@angular/platform-browser": "~8.2.9",
+    "@angular/platform-browser-dynamic": "~8.2.9",
+    "@angular/router": "~8.2.9",
     "@ng-bootstrap/ng-bootstrap": "^4.2.1",
     "bootstrap": "^4.3.1",
     "compass-mixins": "^0.12.10",
@@ -27,15 +27,15 @@
     "font-awesome": "^4.7.0",
     "mdi": "^2.2.43",
     "ng-bootstrap": "^1.6.3",
-    "rxjs": "~6.3.3",
+    "rxjs": "~6.5.3",
     "rxjs-compat": "^6.5.2",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
   },
   "devDependencies": {
     "@angular/cli": "^8.3.8",
-    "@angular/compiler-cli": "^7.2.15",
-    "@angular/language-service": "~7.2.0",
+    "@angular/compiler-cli": "^8.2.9",
+    "@angular/language-service": "~8.2.9",
     "@types/jasmine": "~2.8.8",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "~8.9.4",
@@ -50,10 +50,10 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0",
-    "typescript": "3.6.3"
+    "typescript": "3.5.3"
   },
   "peerDependencies": {
-    "typescript": "3.6.3",
+    "typescript": "3.5.3",
     "zone.js": "~0.9.1"
   }
 }
