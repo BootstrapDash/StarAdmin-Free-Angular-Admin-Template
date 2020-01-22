@@ -55,7 +55,7 @@ import { TabsComponent } from './tabs/tabs.component';
     RouterModule,
     AppRoutingModule,
     FormsModule,
-    NgbModule.forRoot()
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -36,7 +36,7 @@ export class FormsComponent implements OnInit {
       .map(term => term.length > 1 ? []
         : states.filter(v => v.toLowerCase().indexOf(term.toLowerCase()) > -1).slice(0, 10));
 
-  @ViewChild('instance') instance: NgbTypeahead;
+  @ViewChild('instance', {static: true}) instance: NgbTypeahead;
   focus$ = new Subject<string>();
   click$ = new Subject<string>();
 
