@@ -1,0 +1,48 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~bootstrap/scss/functions";
+@import "~bootstrap/scss/variables";
+@import './assets/styles/variables';
+@import "~compass-mixins/lib/compass";
+@import "~compass-mixins/lib/animate";
+@import "~bootstrap/scss/bootstrap";
+@import "~mdi/scss/materialdesignicons";
+@import "~flag-icon-css/sass/flag-icon";
+@import "~typicons.font/src/font/typicons.css";
+@import "./assets/styles/components/loaders/loaders";
+
+@import "./assets/styles/fonts";
+@import"./assets/styles/mixins/text";
+@import "./assets/styles/mixins/functions";
+@import "./assets/styles/mixins/background";
+@import "./assets/styles/mixins/animation";
+@import "./assets/styles/mixins/buttons";
+@import "./assets/styles/mixins/misc";
+@import "./assets/styles/mixins/color-functions";
+@import "./assets/styles/mixins/cards";
+@import "./assets/styles/mixins/blockqoute";
+
+
+@import "./assets/styles/components/forms";
+@import "./assets/styles/components/icons";
+@import "./assets/styles/components/tables";
+@import "./assets/styles/components/buttons";
+@import "./assets/styles/components/cards";
+@import "./assets/styles/components/checkbox-radio";
+@import "./assets/styles/typography";
+@import "./assets/styles/components/preview";
+@import "./assets/styles/components/lists";
+@import "./assets/styles/components/bootstrap-progress";
+@import "./assets/styles/components/dropdowns";
+@import "./assets/styles/components/nav";
+@import "./assets/styles/components/timeline";
+@import "./assets/styles/reset";
+@import "./assets/styles/components/rating";
+@import "./assets/styles/components/plugin-overrides/chartjs";
+@import "./assets/styles/responsive";
+@import "./assets/styles/misc";
+@import "./assets/styles/utilities";
+@import "./assets/styles/auth";
+@import "./assets/styles/demo";
+@import "./assets/styles/misc";
+@import "./assets/styles/layouts";

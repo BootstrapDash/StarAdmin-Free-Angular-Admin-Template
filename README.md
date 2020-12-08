@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 <h1>Demo</h1>
 
-[![N|Solid](preview.jpg)](https://www.bootstrapdash.com/demo/star-admin-angular/dashboard)
+[![N|Solid](preview.jpg)](https://www.bootstrapdash.com/demo/star-admin-angular/preview/demo_1/dashboard)
 
 ## Development server
 

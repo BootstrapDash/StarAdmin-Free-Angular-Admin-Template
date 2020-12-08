@@ -1,0 +1,143 @@
+<nav class="sidebar sidebar-offcanvas" id="sidebar">
+  <ul class="nav">
+    <li class="nav-item nav-profile">
+      <a class="nav-link" (click)="clickedMenu($event)" routerLink="/">
+        <div class="profile-image">
+          <img class="img-xs rounded-circle" src="assets/images/faces/face8.jpg" alt="profile image">
+          <div class="dot-indicator bg-success"></div>
+        </div>
+        <div class="text-wrapper">
+          <p class="profile-name">Allen Moreno</p>
+          <p class="designation">Premium user</p>
+        </div>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="clickedMenu($event)" id="nav-link1"
+        [ngClass]="{'active': dashboardLink.isActive}">
+        <i class="menu-icon typcn typcn-document-text"></i>
+        <span class="menu-title">Dashboard</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" [ngbCollapse]="parentId !== 'nav-link1'">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/dashboard" routerLinkActive="active"
+              #dashboardLink="routerLinkActive">Dashboard
+              1</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="clickedMenu($event)" id="nav-link3"
+        [ngClass]="{'active': buttonsLink.isActive || dropdownLink.isActive || typographyLink.isActive}">
+        <i class="menu-icon typcn typcn-coffee"></i>
+        <span class="menu-title">Basic Elements</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" [ngbCollapse]="parentId !== 'nav-link3'">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/buttons" routerLinkActive="active"
+              #buttonsLink="routerLinkActive">Buttons</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/dropdowns" routerLinkActive="active"
+              #dropdownLink="routerLinkActive">Dropdown</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/typography" routerLinkActive="active"
+              #typographyLink="routerLinkActive">Typography</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="clickedMenu($event)" id="nav-link5"
+      [ngClass]="{'active': chartjsLink.isActive}">
+        <i class="menu-icon typcn typcn-th-large-outline"></i>
+        <span class="menu-title">Charts</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" [ngbCollapse]="parentId !== 'nav-link5'">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/chartjs" routerLinkActive="active"
+              #chartjsLink="routerLinkActive">ChartJS</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="clickedMenu($event)" routerLink="/forms" routerLinkActive="active">
+        <i class="menu-icon typcn typcn-shopping-bag"></i>
+        <span class="menu-title">Form elements</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="clickedMenu($event)" routerLink="/tables" routerLinkActive="active">
+        <i class="menu-icon typcn typcn-bell"></i>
+        <span class="menu-title">Tables</span>
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="clickedMenu($event)" id="nav-link6"
+        [ngClass]="{'active': loginLink.isActive || registerLink.isActive}">
+        <i class="menu-icon typcn typcn-document-add"></i>
+        <span class="menu-title">User Page</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" [ngbCollapse]="parentId !== 'nav-link6'">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/login" routerLinkActive="active" #loginLink="routerLinkActive">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/register" routerLinkActive="active"
+              #registerLink="routerLinkActive">Register</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="clickedMenu($event)" id="nav-link7"
+        [ngClass]="{'active': page404Link.isActive || page500Link.isActive}">
+        <i class="menu-icon typcn typcn-briefcase"></i>
+        <span class="menu-title">Error Page</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" [ngbCollapse]="parentId !== 'nav-link7'">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/404-page" routerLinkActive="active" #page404Link="routerLinkActive">404</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/500-page" routerLinkActive="active" #page500Link="routerLinkActive">500</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" (click)="clickedMenu($event)" id="nav-link9"
+        [ngClass]="{'active': mdiLink.isActive}">
+        <i class="menu-icon typcn typcn-user-outline"></i>
+        <span class="menu-title">Icons</span>
+        <i class="menu-arrow"></i>
+      </a>
+      <div class="collapse" [ngbCollapse]="parentId !== 'nav-link9'">
+        <ul class="nav flex-column sub-menu">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/mdi" routerLinkActive="active" #mdiLink="routerLinkActive">MDI</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" target="_blank" href="https://www.bootstrapdash.com/demo/star-admin-angular/documentation/documentation.html" routerLinkActive="active">
+        <i class="menu-icon typcn typcn-bell"></i>
+        <span class="menu-title">Documentation</span>
+      </a>
+    </li>
+  </ul>
+</nav>

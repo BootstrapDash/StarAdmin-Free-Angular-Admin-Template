@@ -1,0 +1,142 @@
+/* Dashboard */
+
+@import '../../../styles';
+
+#sales-statistics-legend {
+  .chartjs-legend {
+    margin-top: 20px;
+    margin-right: 20px;
+
+    ul {
+      li {
+        color: $body-text-color;
+
+        span {
+          width: 20px;
+          height: 3px;
+          border-radius: 0px;
+        }
+      }
+    }
+  }
+}
+
+#net-profit-legend {
+  .chartjs-legend {
+    li {
+      font-weight: 500;
+      color: $body-text-color;
+    }
+  }
+}
+
+.average-price-card {
+  .card {
+    background: $card-accent-color;
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+
+  .icon-holder {
+    border-radius: 5px;
+    border: 1px solid $iconholder-primary-border-color;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $iconholder-primary-bg;
+    color: $iconholder-primary-color;
+    font-size: 20px;
+
+    i {
+      line-height: 1;
+    }
+  }
+}
+
+#dashboard-vmap {
+  height: 161px;
+  width: 100%;
+
+  .jvectormap-zoomin,
+  .jvectormap-zoomout {
+    display: none;
+  }
+}
+
+
+.sales-mini-tabs {
+  border-bottom: none;
+
+  .nav-item {
+    .nav-link {
+      border: none;
+      font-weight: 500;
+      padding: 5px 15px;
+      border-radius: 2px;
+      transition-duration: 0.7s;
+      transition-property: "color";
+
+      &.active {
+        font-weight: 600;
+        background: lighten($card-bg, 4%);
+        color: theme-color(primary);
+      }
+    }
+  }
+}
+.purchase-popup {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background: #fff;
+  padding: 15px 150px;
+  display: flex;
+  @include media-breakpoint-down(md) { 
+    padding: 15px 20px; 
+    display: block;
+  }
+
+
+  .btn {
+    margin-right: 20px;
+    font-weight: 500;
+    color: #fff;
+    &.purchase-button {
+      color: #fff;
+      border: none;
+      line-height: 1;
+      vertical-align: middle;
+      min-height: auto;
+    }
+  }
+
+  p {
+    margin-bottom: auto;
+    margin-top: auto;
+    color: #1c273c;
+    font-weight: 400;
+    vertical-align: middle;
+    line-height: 1;
+    @include media-breakpoint-down(md) { 
+      margin-bottom: 10px;
+    }
+  }
+
+  i {
+    vertical-align: middle;
+    line-height: 1;
+    margin: auto 0;
+    color: darken(#e4e4e4,20%);
+  }
+}
+.removeProbanner {
+  .purchase-popup {
+    display: none;
+  }
+}

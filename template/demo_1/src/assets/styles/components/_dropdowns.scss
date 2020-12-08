@@ -1,0 +1,38 @@
+/* Dropdowns */
+
+
+.dropdown {
+  .dropdown-toggle {
+    &:after {
+      vertical-align: middle;
+      margin-left: 9px;
+    }
+
+    &.arrow-disabled {
+      border: none;
+      outline: none;
+      box-shadow: none;
+
+      &:focus,
+      &:visited,
+      &:active {
+        outline: none;
+        box-shadow: none;
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  font-size: $default-font-size;
+
+  .dropdown-item {
+    &:active {
+      background: initial;
+    }
+  }
+}

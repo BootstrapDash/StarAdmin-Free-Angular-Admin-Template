@@ -1,0 +1,78 @@
+@import '../../../styles';
+
+.dashboard-bar-chart-legend {
+  .col {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .bg {
+      margin-left: auto;
+      margin-right: auto;
+      height: 5px;
+      width: 30px;
+      display: block;
+      margin-top: 5px;
+    }
+
+    &:nth-child(1) {
+      .bg {
+        background: theme-color(info);
+      }
+    }
+
+    &:nth-child(2) {
+      .bg {
+        background: theme-color(primary);
+      }
+    }
+
+    &:nth-child(3) {
+      .bg {
+        background: theme-color(danger);
+      }
+    }
+  }
+}
+
+.card-revenue-table {
+  .revenue-item {
+    border-bottom: 1px solid $border-color;
+    @extend .py-3;
+
+    &:last-child {
+      border-bottom: 0;
+      @extend .pb-0;
+    }
+
+    &:first-child {
+      @extend .pt-0;
+    }
+
+    .revenue-desc {
+      margin-right: auto;
+      width: 80%;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+
+    .revenue-amount {
+      margin-left: auto;
+      width: 40%;
+
+      p {
+        font-size: 1.25rem;
+        font-family: $type-1;
+        font-weight: 600;
+        text-align: right;
+
+        .rtl & {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

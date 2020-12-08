@@ -1,0 +1,60 @@
+<div class="row">
+  <div class="col-lg-6 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Line chart</h4>
+        <canvas baseChart [chartType]="'line'" [datasets]="lineChartData" [labels]="lineChartLabels"
+          [options]="lineChartOptions" [colors]="lineChartColors"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Bar chart</h4>
+        <canvas baseChart [chartType]="'bar'" [datasets]="barChartData" [labels]="barChartLabels"
+          [options]="barChartOptions" [colors]="barChartColors"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-6 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Area chart</h4>
+        <canvas baseChart [chartType]="'line'" [datasets]="areaChartData" [labels]="areaChartLabels"
+          [options]="areaChartOptions" [colors]="areaChartColors"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 grid-margin stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Doughnut chart</h4>
+        <canvas baseChart [chartType]="'doughnut'" [datasets]="doughnutPieChartData" [labels]="doughnutPieChartLabels"
+          [options]="doughnutPieChartOptions" [colors]="doughnutPieChartColors"></canvas>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-6 grid-margin grid-margin-lg-0 stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Pie chart</h4>
+        <canvas baseChart [chartType]="'pie'" [datasets]="doughnutPieChartData" [labels]="doughnutPieChartLabels"
+          [options]="doughnutPieChartOptions" [colors]="doughnutPieChartColors"></canvas>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-6 grid-margin grid-margin-lg-0 stretch-card">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">Scatter chart</h4>
+        <canvas baseChart [chartType]="'scatter'" [datasets]="scatterChartData" [options]="scatterChartOptions"
+          [colors]="scatterChartColors"></canvas>
+      </div>
+    </div>
+  </div>
+</div>

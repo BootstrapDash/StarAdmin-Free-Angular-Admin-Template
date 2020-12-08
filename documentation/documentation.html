@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Documentation</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/codemirror.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/theme/dracula.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid documentation">
+      <div class="row">
+        <div class="col-md-3 col-xl-2 left-sidebar">
+          <div class="logo-wrapper">
+              <img src="logo.svg" alt="logo">
+          </div>
+          <h5 class="left-menu-title">Documentation</h5>
+          <ul class="left-menu">
+              <li><a href="#introduction"> Introduction </a></li>
+              <li><a href="#fileStructure"> File Structure </a></li>
+          </ul>
+          <h6 class="left-menu-title">Installation</h6>
+          <ul class="left-menu">
+              <li><a href="#setupEnvironment"> Setup Environment </a></li>
+              <li><a href="#templateInstallation"> Template Installation </a></li>
+          </ul>
+          <h6 class="left-menu-title">Deployment</h6>
+          <ul class="left-menu">
+              <li><a href="#deployment"> Deploy Angular App </a></li>
+          </ul>
+          <h6 class="left-menu-title">Basic Structure</h6>
+          <ul class="left-menu">
+              <li><a href="#appComponent"> App Component </a></li>
+              <li><a href="#navbar"> Navbar </a></li>
+              <li><a href="#leftSidebar"> sidebar </a></li>
+              <li><a href="#footer"> Footer </a></li>
+          </ul>
+          <h6 class="left-menu-title">Other Information</h6>
+          <ul class="left-menu">
+              <li><a href="#customerSupport"> Customer Support </a></li>
+          </ul>
+        </div>
+        <div class="col-md-9 col-xl-10 main-panel bg-white">
+          <div class="main-panel-wrapper">
+              <h2 class="mt-2 text-center font-weight-light text-muted text-uppercase mb-4">Documentation</h2>
+              <div class="card grid-margin">
+                <div class="card-body">
+                  <h3 id="introduction" class="mb-4">Introduction</h3>
+                  <p>Star Angular Admin is a responsive Angular 9 template that is based on the CSS framework Bootstrap 4 and it is built with Sass. Sass compiler makes it easier to code and customize. If you are unfamiliar with Bootstrap or Sass, visit their
+                      website and read through the documentation. All of Bootstrap components have been modified to fit the style of Star Angular Admin and provide a consistent look throughout the template.</p>
+                  <p>Before you start working with the template, we suggest you go through the pages that are bundled with the theme. Most of the template example pages contain quick tips on how to create or use a component which can
+                      be really helpful when you need to create something on the fly.</p>
+                  </div>
+              </div>
+              <div class="card grid-margin">
+                <div class="card-body">
+                  <h3 id="fileStructure" class="mb-4">File Structure</h3>
+                  <p>Once you have download the package you will see the following folder structure inside the folder.</p>
+                  <textarea rows="4" cols="50" class="code-non-editable">
+Star/
+  ├── template
+    ├── demo variation folders (for eg, demo_1)
+        ├── e2e/
+        ├── src/
+            ├── app/
+            ├── assets/
+            ├── environments/
+            ├── browserlist
+            ├── favicon.ico
+            ├── index.html
+            ├── karma.conf.js
+            ├── main.ts
+            ├── polyfills.ts
+            ├── styles.scss
+            ├── test.ts
+            ├── tsconfig.app.json
+            ├── tsconfig.json
+            ├── tsconfig.spec.json
+        ├── .editorconfig/
+        ├── .gitignore
+        ├── angular.json
+        ├── CHANGELOG.md
+        ├── package.json
+        ├── README.md
+        ├── .tsconfig.md
+        ├── .tslint.json
+  ├── preview (dist)
+  ├── CHANGELOG.md
+  ├── documentation
+                  </textarea>
+                </div>
+              </div>
+              <div class="card grid-margin">
+                <div class="card-body">
+                  <h3>Installation </h3>
+                  <h4 id="setupEnvironment" class="pt-4">Set up the Development Environment</h4>
+                  <p>Install <a href="https://nodejs.org/en/" target="_blank">Node.js and npm</a> if they are not already on your machine.</p>
+                  <p>Angular CLI is a command line interface for the latest Angular. Install it before start with the Angular app.</p>
+                  <textarea rows="4" cols="50" class="code-non-editable">npm install --global @angular/cli@latest</textarea>
+                  <div class="alert alert-warning">
+                      <p>If you have Angular CLI installed previously , update it to the latest Angular CLI. Remove the older version and re-install it.</p>
+                      <textarea rows="4" cols="50" class="code-non-editable">npm uninstall --global @angular/cli</textarea>
+                      <textarea rows="4" cols="50" class="code-non-editable">npm install --global @angular/cli@latest</textarea>   
+                  </div>
+                  <h4 id="templateInstallation" class="pt-4">Template Installation </h4>
+                  <p>Go to the project directory and install the Angular local project dependencies.</p>
+                  <p>Run <code>npm install</code>. This command install the dependencies in the local <code>node_modules</code> folder.
+                      By default, <code>npm install</code> will install all modules listed as dependencies in <code>package.json</code>.</p>
+                  <textarea rows="4" cols="50" class="code-non-editable">npm install</textarea>   
+                  <textarea rows="4" cols="50" class="code-non-editable">ng serve</textarea>                   
+                  <p>The <code>ng serve</code> command launches the server, watches your files, and rebuilds the app as you make changes to those files.
+                      Using the <code>--open</code> (or just <code>-o</code>) option will automatically open your browser on <a href="http://localhost:4200/" target="_blank">http://localhost:4200/</a>.</p>
+                  <p>For more detailed information to install the Angular application, visit this official Angular <a href="https://angular.io/guide/quickstart" target="_blank">documentation website</a>.</p>
+                </div>
+              </div>
+              <div class="card grid-margin">
+                <div class="card-body">
+                  <h3 id="deployment">Deployment</h3>
+                  <h4 class="pt-4">Deploy Angular app </h4>
+                  <p>For the simplest deployment, create a production build and copy the output directory to a web server.</p>
+                  <p>1. Start with the production build:</p>
+                  <textarea rows="4" cols="50" class="code-non-editable">ng build --prod</textarea>   
+                  <p>2. Copy everything within the output folder (dist/) to a folder on the server.</p>
+                  <p>3. Configure the server to redirect requests for missing files to index.html.</p>
+                  <p class="mt-4">If you copy the files into a server sub-folder, append the build flag, <code>--base-href</code> and set the <code>&lt;base href&gt;</code> appropriately.
+                      For example, if the <code>index.html</code> is on the server at <code>/my/app/index.html</code>, set the base href to <code>&lt;base href="/my/app/"&gt;</code> like this.</p>
+                      <p>If you're serving the app out of a subfolder, edit a version of index.html to set the base href appropriately.
+                      For example, if the URL to <code>index.html</code> is <code>www.mysite.com/my/app/index.html</code>, set the base href to:</p>
+                  <textarea rows="4" cols="50" class="code-non-editable"><base href="/my/app/"></textarea>                   
+                  <p>Learn more about the role of <code>&lt;base href&gt;</code> <a href="https://angular.io/guide/deployment#base-tag" target="_blank">below</a>.</p>
+                  <p>You also can set the base href right in the <code>ng build</code> command</p>
+                  <textarea rows="4" cols="50" class="code-non-editable">ng build --prod --base-href="/my/app/"</textarea>                
+                  <p>For more detailed information, visit this official Angular <a href="https://angular.io/guide/deployment" target="_blank">documentation website</a>.</p>
+                </div>
+              </div>
+              <div class="card grid-margin">
+                <div class="card-body">
+                  <h3>Basic Structure</h3>
+                  <h4 class="pt-4" id="appComponent">App Component</h4>
+                  <textarea rows="4" cols="50" class="code-non-editable">
+  <div class="container-scroller">
+    <app-navbar></app-navbar>
+    <div class="container-fluid page-body-wrapper">
+      <app-sidebar></app-sidebar>
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <router-outlet></router-outlet>
+        </div>
+        <app-footer></app-footer>
+      </div>
+    </div>
+  </div>                 
+                  </textarea>
+                  <h4 class="pt-4" id="navbar">Header</h4>
+                  <textarea rows="4" cols="50" class="code-non-editable">
+  <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+    <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">
+      <a class="navbar-brand brand-logo" routerLink="/dashboard">
+        <img src="assets/images/logo.svg" alt="logo" /> </a>
+      <a class="navbar-brand brand-logo-mini" routerLink="/dashboard">
+        <img src="assets/images/logo-mini.svg" alt="logo" /> </a>
+    </div>
+    <div class="navbar-menu-wrapper d-flex align-items-center">
+      <button class="navbar-toggler navbar-toggler align-self-center" type="button" data-toggle="minimize"
+        (click)="toggleIconOnlySidebar()">
+        <span class="mdi mdi-menu"></span>
+      </button>
+      <ul class="navbar-nav">
+        <li class="nav-item font-weight-semibold d-none d-lg-flex">Help : +050 2992 709</li>
+        <li class="nav-item dropdown language-dropdown" ngbDropdown>
+          <a class="nav-link px-2 d-flex align-items-center" id="LanguageDropdown" ngbDropdownToggle>
+            <div class="d-inline-flex mr-0 mr-md-3">
+              <div class="flag-icon-holder">
+                <i class="flag-icon flag-icon-us"></i>
+              </div>
+            </div>
+            <span class="profile-text font-weight-medium d-none d-md-block">English</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-left navbar-dropdown py-2" ngbDropdownMenu
+            aria-labelledby="LanguageDropdown">
+            <a class="dropdown-item">
+              <div class="flag-icon-holder">
+                <i class="flag-icon flag-icon-us"></i>
+              </div>English
+            </a>
+            <a class="dropdown-item">
+              <div class="flag-icon-holder">
+                <i class="flag-icon flag-icon-fr"></i>
+              </div>French
+            </a>
+            <a class="dropdown-item">
+              <div class="flag-icon-holder">
+                <i class="flag-icon flag-icon-ae"></i>
+              </div>Arabic
+            </a>
+            <a class="dropdown-item">
+              <div class="flag-icon-holder">
+                <i class="flag-icon flag-icon-ru"></i>
+              </div>Russian
+            </a>
+          </div>
+        </li>
+      </ul>
+      <form class="ml-auto search-form d-none d-md-block" action="#">
+        <div class="form-group">
+          <input type="search" class="form-control" placeholder="Search Here">
+        </div>
+      </form>
+      <ul class="navbar-nav navbar-nav-right">
+        <li class="nav-item dropdown" ngbDropdown>
+          <a class="nav-link count-indicator dropdown-toggle" id="messageDropdown" ngbDropdownToggle>
+            <i class="mdi mdi-file-outline"></i>
+            <span class="count">7</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" ngbDropdownMenu
+            aria-labelledby="messageDropdown">
+            <a class="dropdown-item py-3">
+              <p class="mb-0 font-weight-medium float-left">You have 7 unread mails </p>
+              <span class="badge badge-pill badge-primary float-right">View all</span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item preview-item">
+              <div class="preview-thumbnail">
+                <img src="assets/images/faces/face10.jpg" alt="image" class="img-sm profile-pic"> </div>
+              <div class="preview-item-content flex-grow py-2">
+                <p class="preview-subject ellipsis font-weight-medium text-dark">Marian Garner </p>
+                <p class="font-weight-light small-text"> The meeting is cancelled </p>
+              </div>
+            </a>
+            <a class="dropdown-item preview-item">
+              <div class="preview-thumbnail">
+                <img src="assets/images/faces/face12.jpg" alt="image" class="img-sm profile-pic"> </div>
+              <div class="preview-item-content flex-grow py-2">
+                <p class="preview-subject ellipsis font-weight-medium text-dark">David Grey </p>
+                <p class="font-weight-light small-text"> The meeting is cancelled </p>
+              </div>
+            </a>
+            <a class="dropdown-item preview-item">
+              <div class="preview-thumbnail">
+                <img src="assets/images/faces/face1.jpg" alt="image" class="img-sm profile-pic"> </div>
+              <div class="preview-item-content flex-grow py-2">
+                <p class="preview-subject ellipsis font-weight-medium text-dark">Travis Jenkins </p>
+                <p class="font-weight-light small-text"> The meeting is cancelled </p>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item dropdown ml-4" ngbDropdown>
+          <a class="nav-link count-indicator dropdown-toggle" id="notificationDropdown" ngbDropdownToggle>
+            <i class="mdi mdi-bell-outline"></i>
+            <span class="count bg-success">4</span>
+          </a>
+          <div class="dropdown-menu dropdown-menu-right navbar-dropdown preview-list pb-0" ngbDropdownMenu
+            aria-labelledby="UserDropdown">
+            <a class="dropdown-item py-3 border-bottom">
+              <p class="mb-0 font-weight-medium float-left">You have 4 new notifications </p>
+              <span class="badge badge-pill badge-primary float-right">View all</span>
+            </a>
+            <a class="dropdown-item preview-item py-3">
+              <div class="preview-thumbnail">
+                <i class="mdi mdi-alert m-auto text-primary"></i>
+              </div>
+              <div class="preview-item-content">
+                <h6 class="preview-subject font-weight-normal text-dark mb-1">Application Error</h6>
+                <p class="font-weight-light small-text mb-0"> Just now </p>
+              </div>
+            </a>
+            <a class="dropdown-item preview-item py-3">
+              <div class="preview-thumbnail">
+                <i class="mdi mdi-settings m-auto text-primary"></i>
+              </div>
+              <div class="preview-item-content">
+                <h6 class="preview-subject font-weight-normal text-dark mb-1">Settings</h6>
+                <p class="font-weight-light small-text mb-0"> Private message </p>
+              </div>
+            </a>
+            <a class="dropdown-item preview-item py-3">
+              <div class="preview-thumbnail">
+                <i class="mdi mdi-airballoon m-auto text-primary"></i>
+              </div>
+              <div class="preview-item-content">
+                <h6 class="preview-subject font-weight-normal text-dark mb-1">New user registration</h6>
+                <p class="font-weight-light small-text mb-0"> 2 days ago </p>
+              </div>
+            </a>
+          </div>
+        </li>
+        <li class="nav-item dropdown d-none d-xl-inline-flex" ngbDropdown>
+          <a class="nav-link dropdown-toggle" id="UserDropdown" ngbDropdownToggle>
+            <img class="img-xs rounded-circle" src="assets/images/faces/face1.jpg" alt="Profile image">
+          </a>
+          <div class="dropdown-menu dropdown-menu-right navbar-dropdown" ngbDropdownMenu aria-labelledby="UserDropdown">
+            <div class="dropdown-header text-center">
+              <img class="img-md rounded-circle" src="assets/images/faces/face8.jpg" alt="Profile image">
+              <p class="mb-1 mt-3 font-weight-semibold">Allen Moreno</p>
+              <p class="font-weight-light text-muted mb-0">allenmoreno@gmail.com</p>
+            </div>
+            <a class="dropdown-item">My Profile <span class="badge badge-pill badge-danger">1</span><i
+                class="dropdown-item-icon ti-dashboard"></i></a>
+            <a class="dropdown-item">Messages<i class="dropdown-item-icon ti-comment-alt"></i></a>
+            <a class="dropdown-item">Activity<i class="dropdown-item-icon ti-location-arrow"></i></a>
+            <a class="dropdown-item">FAQ<i class="dropdown-item-icon ti-help-alt"></i></a>
+            <a class="dropdown-item">Sign Out<i class="dropdown-item-icon ti-power-off"></i></a>
+          </div>
+        </li>
+      </ul>
+      <button class="navbar-toggler navbar-toggler-right d-lg-none align-self-center" type="button"
+        (click)="toggleRightSidebar()">
+        <span class="mdi mdi-menu"></span>
+      </button>
+    </div>
+  </nav>
+                  </textarea>
+                  <h4 class="pt-4" id="leftSidebar">Sidebar</h4>
+                  <textarea rows="4" cols="50" class="code-non-editable">
+  <nav class="sidebar sidebar-offcanvas" id="sidebar">
+    <ul class="nav">
+      <li class="nav-item nav-profile">
+        <a class="nav-link" (click)="clickedMenu($event)" routerLink="/">
+          <div class="profile-image">
+            <img class="img-xs rounded-circle" src="assets/images/faces/face8.jpg" alt="profile image">
+            <div class="dot-indicator bg-success"></div>
+          </div>
+          <div class="text-wrapper">
+            <p class="profile-name">Allen Moreno</p>
+            <p class="designation">Premium user</p>
+          </div>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="clickedMenu($event)" id="nav-link1"
+          [ngClass]="{'active': dashboardLink.isActive}">
+          <i class="menu-icon typcn typcn-document-text"></i>
+          <span class="menu-title">Dashboard</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" [ngbCollapse]="parentId !== 'nav-link1'">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/dashboard" routerLinkActive="active"
+                #dashboardLink="routerLinkActive">Dashboard
+                1</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="clickedMenu($event)" id="nav-link3"
+          [ngClass]="{'active': buttonsLink.isActive || dropdownLink.isActive || typographyLink.isActive}">
+          <i class="menu-icon typcn typcn-coffee"></i>
+          <span class="menu-title">Basic Elements</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" [ngbCollapse]="parentId !== 'nav-link3'">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/buttons" routerLinkActive="active"
+                #buttonsLink="routerLinkActive">Buttons</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/dropdowns" routerLinkActive="active"
+                #dropdownLink="routerLinkActive">Dropdown</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/typography" routerLinkActive="active"
+                #typographyLink="routerLinkActive">Typography</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="clickedMenu($event)" id="nav-link5"
+        [ngClass]="{'active': chartjsLink.isActive}">
+          <i class="menu-icon typcn typcn-th-large-outline"></i>
+          <span class="menu-title">Charts</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" [ngbCollapse]="parentId !== 'nav-link5'">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/chartjs" routerLinkActive="active"
+                #chartjsLink="routerLinkActive">ChartJS</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="clickedMenu($event)" routerLink="/forms" routerLinkActive="active">
+          <i class="menu-icon typcn typcn-shopping-bag"></i>
+          <span class="menu-title">Form elements</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="clickedMenu($event)" routerLink="/tables" routerLinkActive="active">
+          <i class="menu-icon typcn typcn-bell"></i>
+          <span class="menu-title">Tables</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="clickedMenu($event)" id="nav-link6"
+          [ngClass]="{'active': loginLink.isActive || registerLink.isActive}">
+          <i class="menu-icon typcn typcn-document-add"></i>
+          <span class="menu-title">User Page</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" [ngbCollapse]="parentId !== 'nav-link6'">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/login" routerLinkActive="active" #loginLink="routerLinkActive">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/register" routerLinkActive="active"
+                #registerLink="routerLinkActive">Register</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="clickedMenu($event)" id="nav-link7"
+          [ngClass]="{'active': page404Link.isActive || page500Link.isActive}">
+          <i class="menu-icon typcn typcn-briefcase"></i>
+          <span class="menu-title">Error Page</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" [ngbCollapse]="parentId !== 'nav-link7'">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/404-page" routerLinkActive="active" #page404Link="routerLinkActive">404</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/500-page" routerLinkActive="active" #page500Link="routerLinkActive">500</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="clickedMenu($event)" id="nav-link9"
+          [ngClass]="{'active': mdiLink.isActive}">
+          <i class="menu-icon typcn typcn-user-outline"></i>
+          <span class="menu-title">Icons</span>
+          <i class="menu-arrow"></i>
+        </a>
+        <div class="collapse" [ngbCollapse]="parentId !== 'nav-link9'">
+          <ul class="nav flex-column sub-menu">
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/mdi" routerLinkActive="active" #mdiLink="routerLinkActive">MDI</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" target="_blank" href="https://www.bootstrapdash.com/demo/star-admin-angular/documentation/documentation.html" routerLinkActive="active">
+          <i class="menu-icon typcn typcn-bell"></i>
+          <span class="menu-title">Documentation</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+                         
+                  </textarea>
+                  <h4 class="pt-4" id="footer">Footer</h4>
+                  <textarea rows="4" cols="50" class="code-non-editable">
+  <footer class="footer">
+    <div class="d-sm-flex justify-content-center justify-content-sm-between">
+      <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">Copyright © bootstrapdash.com 2020</span>
+      <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Free <a href="https://www.bootstrapdash.com/bootstrap-admin-template/" target="_blank">Bootstrap admin template</a> from BootstrapDash.com
+      </span>
+    </div>
+  </footer>
+                      
+                  </textarea>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-body">
+                  <h3 id="customerSupport" class="mb-4">Customer Support</h3>
+                  <p>If you face any issues while using Star Angular Admin Template, please feel free to contact us via <a href="https://bootstrapdash.freshdesk.com/support/tickets/new" target="_blank">BootstrapDash support desk</a>.</p>
+                  <p>We will respond to you as quickly as we can.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.45.0/mode/python/python.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
